@@ -20,7 +20,7 @@
     {
       "label": "ЛР2: открыть меню заданий",
       "type": "shell",
-      "command": "Start-Process '${workspaceFolder}\\ЛР2\\index.html'",
+      "command": "Start-Process '${workspaceFolder}\\lab2\\index.html'",
       "presentation": { "reveal": "silent" },
       "problemMatcher": []
     },

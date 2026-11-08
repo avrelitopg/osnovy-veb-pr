@@ -6,7 +6,7 @@
 ОСНОВЫ ВЕБ ПР/
 ├── index.html            главная: список всех лабораторных
 ├── ЛАБ1_ВЕБ_ОТЧЕТ.docx   ЛР1 (git)
-├── ЛР2/                  ЛР2. HTML, CSS
+├── lab2/                 ЛР2. HTML, CSS
 │   ├── index.html        меню заданий ЛР2
 │   ├── student.html      2.1 страница о студенте
 │   ├── tables.html       2.2 таблицы А и Б
@@ -34,12 +34,12 @@
 
 | Задание | Файл | Что сказать |
 |---|---|---|
-| 2.1 | `ЛР2/student.html` | разные теги: заголовки, списки `ul/ol/dl`, таблица, `img`, `a` (ссылка, якорь, mailto), `abbr`, `blockquote`, `sup/sub`, `details` |
-| 2.2 А | `ЛР2/tables.html` | столбцы 1 и 3: `rowspan=3` сверху; столбцы 2 и 4: `rowspan=3` снизу; верхняя строка `colspan=5` |
-| 2.2 Б | `ЛР2/tables.html` | сетка 8×8; бирюзовые полосы — `colspan` 8/6/4, жёлтые — `rowspan` 6/4/2 |
-| 2.3 | `ЛР2/forms.html` | `input` типов text/password/radio/checkbox/file, `select`, `textarea`, `submit/reset`, `label` |
-| 3 | `ЛР2/css.html` + `style.css` | внешний — `<link>` в `<head>`; внутренний — `<style>`; inline — `style="..."` у слов «Описание», «таблиц», «начинаться»; `id` — `#main-title`, `#math-table`; классы — `.bg-cyan`, `.field2` и т. д. |
+| 2.1 | `lab2/student.html` | разные теги: заголовки, списки `ul/ol/dl`, таблица, `img`, `a` (ссылка, якорь, mailto), `abbr`, `blockquote`, `sup/sub`, `details` |
+| 2.2 А | `lab2/tables.html` | столбцы 1 и 3: `rowspan=3` сверху; столбцы 2 и 4: `rowspan=3` снизу; верхняя строка `colspan=5` |
+| 2.2 Б | `lab2/tables.html` | сетка 8×8; бирюзовые полосы — `colspan` 8/6/4, жёлтые — `rowspan` 6/4/2 |
+| 2.3 | `lab2/forms.html` | `input` типов text/password/radio/checkbox/file, `select`, `textarea`, `submit/reset`, `label` |
+| 3 | `lab2/css.html` + `style.css` | внешний — `<link>` в `<head>`; внутренний — `<style>`; inline — `style="..."` у слов «Описание», «таблиц», «начинаться»; `id` — `#main-title`, `#math-table`; классы — `.bg-cyan`, `.field2` и т. д. |
 
 ## Новая лабораторная
 
-Создать папку `ЛР3/` со своим `index.html` и добавить ссылку на неё в корневой `index.html`.
+Создать папку `lab3/` со своим `index.html` и добавить ссылку на неё в корневой `index.html`.
