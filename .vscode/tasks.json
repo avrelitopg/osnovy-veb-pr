@@ -1,0 +1,35 @@
+{
+  // Запуск: Ctrl+Shift+P -> «Tasks: Run Task» -> выбрать задачу.
+  // Ctrl+Shift+B сразу запускает задачу по умолчанию («Открыть все лабораторные»).
+  "version": "2.0.0",
+  "options": {
+    "shell": {
+      "executable": "powershell.exe",
+      "args": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-Command"]
+    }
+  },
+  "tasks": [
+    {
+      "label": "Открыть все лабораторные",
+      "type": "shell",
+      "command": "Start-Process '${workspaceFolder}\\index.html'",
+      "group": { "kind": "build", "isDefault": true },
+      "presentation": { "reveal": "silent" },
+      "problemMatcher": []
+    },
+    {
+      "label": "ЛР2: открыть меню заданий",
+      "type": "shell",
+      "command": "Start-Process '${workspaceFolder}\\ЛР2\\index.html'",
+      "presentation": { "reveal": "silent" },
+      "problemMatcher": []
+    },
+    {
+      "label": "Открыть текущий файл в браузере",
+      "type": "shell",
+      "command": "Start-Process '${file}'",
+      "presentation": { "reveal": "silent" },
+      "problemMatcher": []
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  // VS Code сам предложит поставить эти расширения при открытии папки
+  "recommendations": [
+    "ritwickdey.LiveServer"
+  ]
+}

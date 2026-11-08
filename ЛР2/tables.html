@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Задание 2.2 — Таблицы</title>
+</head>
+<body>
+
+  <h1 align="center">Задание 2.2. Таблицы</h1>
+
+  <!-- Таблица А: объединение ячеек colspan / rowspan -->
+  <h2 align="center">А.</h2>
+  <table border="1" cellspacing="0" cellpadding="0" width="700" align="center"
+         style="border-collapse: collapse;">
+    <!-- Строка 1: одна ячейка на все 5 столбцов -->
+    <tr height="28">
+      <td colspan="5">&nbsp;</td>
+    </tr>
+    <!-- Строка 2 -->
+    <tr height="28">
+      <td rowspan="3" width="20%">&nbsp;</td>
+      <td width="20%">&nbsp;</td>
+      <td rowspan="3" width="20%">&nbsp;</td>
+      <td width="20%">&nbsp;</td>
+      <td width="20%">&nbsp;</td>
+    </tr>
+    <!-- Строка 3 -->
+    <tr height="28">
+      <td rowspan="3">&nbsp;</td>
+      <td rowspan="3">&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <!-- Строка 4 -->
+    <tr height="28">
+      <td>&nbsp;</td>
+    </tr>
+    <!-- Строка 5 -->
+    <tr height="28">
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+
+  <!-- Таблица Б: квадрат 8×8 из вложенных «рамок» -->
+  <h2 align="center">Б.</h2>
+  <table border="1" cellspacing="0" cellpadding="0" align="center"
+         style="border-collapse: collapse; width: 448px; height: 448px; table-layout: fixed;">
+    <!-- Столбцы одинаковой ширины -->
+    <colgroup>
+      <col width="56"><col width="56"><col width="56"><col width="56">
+      <col width="56"><col width="56"><col width="56"><col width="56">
+    </colgroup>
+    <!-- 1 -->
+    <tr height="56">
+      <td colspan="8" bgcolor="#00FFCC"></td>
+    </tr>
+    <!-- 2 -->
+    <tr height="56">
+      <td rowspan="6" bgcolor="#FFFFCC"></td>
+      <td colspan="6" bgcolor="#00FFCC"></td>
+      <td rowspan="6" bgcolor="#FFFFCC"></td>
+    </tr>
+    <!-- 3 -->
+    <tr height="56">
+      <td rowspan="4" bgcolor="#FFFFCC"></td>
+      <td colspan="4" bgcolor="#00FFCC"></td>
+      <td rowspan="4" bgcolor="#FFFFCC"></td>
+    </tr>
+    <!-- 4: центр, верхняя половина -->
+    <tr height="56">
+      <td rowspan="2" bgcolor="#FFFFCC"></td>
+      <td bgcolor="#FF0000"></td>
+      <td bgcolor="#0000FF"></td>
+      <td rowspan="2" bgcolor="#FFFFCC"></td>
+    </tr>
+    <!-- 5: центр, нижняя половина -->
+    <tr height="56">
+      <td bgcolor="#00FF00"></td>
+      <td bgcolor="#FFFF00"></td>
+    </tr>
+    <!-- 6 -->
+    <tr height="56">
+      <td colspan="4" bgcolor="#00FFCC"></td>
+    </tr>
+    <!-- 7 -->
+    <tr height="56">
+      <td colspan="6" bgcolor="#00FFCC"></td>
+    </tr>
+    <!-- 8 -->
+    <tr height="56">
+      <td colspan="8" bgcolor="#00FFCC"></td>
+    </tr>
+  </table>
+
+  <p align="center"><a href="index.html">&larr; К списку заданий</a></p>
+
+</body>
+</html>

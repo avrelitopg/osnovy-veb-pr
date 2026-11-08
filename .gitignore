@@ -1,0 +1,9 @@
+# Служебные файлы Claude
+.claude/
+
+# Временные файлы Word и Office
+~$*
+
+# Системные файлы
+Thumbs.db
+desktop.ini

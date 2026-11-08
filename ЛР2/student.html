@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Баженов Аврелий Павлович">
+  <meta name="description" content="Личная страница студента НВГУ">
+  <title>Баженов Аврелий — страница студента</title>
+</head>
+<body bgcolor="#f4f7fb" text="#222222" link="#1a5fb4" vlink="#613583">
+
+  <!-- Шапка: чей сайт и фото -->
+  <header>
+    <table width="100%" cellpadding="10" cellspacing="0" bgcolor="#1a5fb4">
+      <tr>
+        <td width="150" align="center">
+          <img src="img/photo.png" width="130" height="130" alt="Фото студента"
+               style="object-fit: cover; border: 3px solid #ffffff;">
+        </td>
+        <td>
+          <h1><font color="#ffffff">Сайт студента Баженова Аврелия Павловича</font></h1>
+          <p><font color="#dbe8ff"><i>Студент 3 курса НВГУ, группа 3412, направление 09.03.01 «Информатика и вычислительная техника»</i></font></p>
+        </td>
+      </tr>
+    </table>
+  </header>
+
+  <!-- Навигация по разделам страницы -->
+  <nav>
+    <p align="center">
+      <a href="#vuz">Мой ВУЗ</a> |
+      <a href="#group">Моя группа</a> |
+      <a href="#profession">Профессия</a> |
+      <a href="#hobby">Увлечения</a> |
+      <a href="#other">Другое</a> |
+      <a href="#contacts">Контакты</a>
+    </p>
+  </nav>
+  <hr size="3" color="#1a5fb4">
+
+  <main>
+    <!-- О себе -->
+    <section>
+      <h2>Обо мне</h2>
+      <p>
+        Привет! Меня зовут <b>Баженов Аврелий Павлович</b>. Я учусь в
+        <abbr title="Нижневартовский государственный университет">НВГУ</abbr>
+        и занимаюсь <em>программированием</em>, <strong>базами данных</strong>
+        и <u>веб-разработкой</u>.
+      </p>
+    </section>
+
+    <!-- Мой ВУЗ -->
+    <section id="vuz">
+      <h2>Мой ВУЗ — НВГУ</h2>
+      <p>
+        <dfn>Нижневартовский государственный университет</dfn> (НВГУ) — государственный вуз
+        в городе Нижневартовске Ханты-Мансийского автономного округа — Югры.
+        Университет ведёт историю с <time datetime="1988">1988 года</time>, когда был открыт
+        Нижневартовский государственный педагогический институт.
+      </p>
+      <p>В университете есть:</p>
+      <ul type="square">
+        <li>факультеты и кафедры по естественным, техническим и гуманитарным направлениям;</li>
+        <li>бакалавриат, магистратура и аспирантура;</li>
+        <li>научная библиотека и компьютерные классы;</li>
+        <li>студенческие клубы, спортивные секции и общежития.</li>
+      </ul>
+      <p>
+        Официальный сайт:
+        <a href="https://nvsu.ru" target="_blank" title="Перейти на сайт НВГУ">nvsu.ru</a>
+      </p>
+      <blockquote>
+        <q>Образование — это то, что остаётся, когда всё выученное забыто.</q>
+        <br><cite>— Альберт Эйнштейн</cite>
+      </blockquote>
+    </section>
+
+    <!-- Моя группа -->
+    <section id="group">
+      <h2>Моя группа</h2>
+      <table border="1" cellpadding="6" cellspacing="0" width="60%">
+        <caption><b>Сведения об обучении</b></caption>
+        <tr bgcolor="#dbe8ff">
+          <th>Параметр</th>
+          <th>Значение</th>
+        </tr>
+        <tr>
+          <td>Курс</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>Группа</td>
+          <td>3412</td>
+        </tr>
+        <tr>
+          <td>Направление</td>
+          <td>09.03.01 Информатика и вычислительная техника</td>
+        </tr>
+        <tr>
+          <td>Направленность (профиль)</td>
+          <td>Программное обеспечение средств вычислительной техники и автоматизированных систем</td>
+        </tr>
+        <tr>
+          <td>Форма обучения</td>
+          <td>Очная</td>
+        </tr>
+      </table>
+      <p>Предметы этого семестра:</p>
+      <ol>
+        <li>Основы веб-программирования</li>
+        <li>Системы управления базами данных (PostgreSQL)</li>
+        <li>Программирование на Java</li>
+        <li>Платформа 1С:Предприятие</li>
+      </ol>
+    </section>
+
+    <!-- Моя будущая профессия -->
+    <section id="profession">
+      <h2>Моя будущая профессия</h2>
+      <p>
+        Я хочу стать <mark>разработчиком программного обеспечения</mark>.
+        Разработчик проектирует, пишет и тестирует программы, а также поддерживает их работу.
+      </p>
+      <dl>
+        <dt><b>Frontend</b></dt>
+        <dd>разработка интерфейса: HTML, CSS, JavaScript.</dd>
+        <dt><b>Backend</b></dt>
+        <dd>серверная часть и базы данных: Java, SQL.</dd>
+        <dt><b>Gamedev</b></dt>
+        <dd>разработка игр: игровые механики, 3D-модели, сценарии на Lua.</dd>
+      </dl>
+      <p>Пример простейшего HTML-документа:</p>
+      <pre><code>&lt;html&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Привет, мир!&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </section>
+
+    <!-- Увлечения -->
+    <section id="hobby">
+      <h2>Мои увлечения</h2>
+      <ul>
+        <li><b>Разработка игр</b> — делаю свою игру-арену в Roblox Studio.</li>
+        <li><b>3D-моделирование</b> — создаю модели в <i>Blender</i>.</li>
+        <li><b>Программирование</b> — изучаю новые языки и технологии:
+          <ul type="circle">
+            <li>Lua (Luau)</li>
+            <li>Java</li>
+            <li>HTML и CSS</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Другая информация -->
+    <section id="other">
+      <h2>Другая информация</h2>
+      <h3>Немного математики и химии</h3>
+      <p>
+        Формула площади круга: S = &pi;r<sup>2</sup>.
+        Формула воды: H<sub>2</sub>O.
+      </p>
+      <p>
+        <small>Мелкий текст</small>, <big>крупный текст</big>,
+        <s>зачёркнутый текст</s>, <del>удалённый</del> и <ins>вставленный</ins> текст,
+        клавиша <kbd>Ctrl</kbd> + <kbd>S</kbd>, переменная <var>x</var>.
+      </p>
+      <h3>Мой распорядок дня</h3>
+      <table border="1" cellpadding="5" cellspacing="0">
+        <tr bgcolor="#dbe8ff">
+          <th>Время</th>
+          <th>Занятие</th>
+        </tr>
+        <tr><td>08:00–14:00</td><td>Учёба в университете</td></tr>
+        <tr><td>14:00–18:00</td><td>Лабораторные работы</td></tr>
+        <tr><td>18:00–22:00</td><td>Разработка игры</td></tr>
+      </table>
+      <details>
+        <summary>Интересный факт (нажмите, чтобы открыть)</summary>
+        <p>Первая веб-страница в мире появилась в 1991 году, её создал Тим Бернерс-Ли.</p>
+      </details>
+    </section>
+  </main>
+
+  <hr>
+
+  <!-- Контакты -->
+  <footer id="contacts">
+    <address>
+      Электронная почта:
+      <a href="mailto:avreliibazhenov96@gmail.com">avreliibazhenov96@gmail.com</a><br>
+      GitHub: <a href="https://github.com/avrelitopg" target="_blank">avrelitopg</a>
+    </address>
+    <p align="center"><small>&copy; 2026 Баженов Аврелий Павлович, группа 3412. Лабораторная работа №2.</small></p>
+    <p align="center"><a href="index.html">&larr; К списку заданий</a></p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Задание 3 — Таблицы в HTML</title>
+
+  <!-- Способ 3: внешняя таблица стилей -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Способ 2: внутренняя таблица стилей -->
+  <style>
+    /* Абзацы с отступом и выравниванием */
+    .indent  { text-indent: 40px; }
+    .right   { text-align: right; }
+    .center  { text-align: center; }
+
+    /* Крупный текст и разные начертания */
+    .big     { font-size: 24px; }
+    .bigger  { font-size: 28px; }
+    .small   { font-size: 17px; }
+    .bold    { font-weight: bold; }
+    .italic  { font-style: italic; }
+    .uline   { text-decoration: underline; }
+
+    /* Цветные слова в абзаце про строки и ячейки */
+    #word-each {
+      color: #1f3fd6;
+      font-weight: bold;
+      font-style: italic;
+      font-family: "Monotype Corsiva", "Segoe Script", cursive;
+    }
+    #word-cell {
+      color: #ff0000;
+      font-weight: bold;
+      font-style: italic;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Подписи к таблице */
+    #table-number {
+      text-align: right;
+      font-weight: bold;
+    }
+    #math-table caption {
+      color: #1f3fd6;
+      font-weight: bold;
+      font-style: italic;
+      font-size: 22px;
+      text-decoration: line-through;
+      font-family: "Monotype Corsiva", "Times New Roman", serif;
+      padding-bottom: 14px;
+    }
+
+    /* Ячейки заголовочной строки */
+    .field1 {
+      font-family: "Monotype Corsiva", "Segoe Script", cursive;
+      font-style: italic;
+      font-weight: bold;
+    }
+    .field2 {
+      background: #000;
+      color: #fff;
+      text-align: center;
+      font: bold 20px Arial, sans-serif;
+    }
+    .field3 {
+      background: #00ffff;
+      color: #1f3fd6;
+      text-align: right;
+      font: bold 20px Arial, sans-serif;
+    }
+    .field4 {
+      background: #ff99cc;
+      font: italic 20px Arial, sans-serif;
+      text-decoration: underline;
+    }
+    .field5 {
+      background: #ffff00;
+      text-align: center;
+      font-weight: bold;
+      letter-spacing: 4px;
+    }
+
+    /* Строка с формулами */
+    .formula {
+      font-weight: bold;
+    }
+    .blue {
+      color: #1f3fd6;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 id="main-title">Таблицы в HTML</h1>
+
+  <p class="indent">
+    <span class="bg-cyan">Одним из наиболее мощных и широко применяемых в
+      <span class="sans bold big">HTML</span> средств являются
+      <span class="sans italic bigger">таблицы</span>.</span>
+  </p>
+
+  <p class="right">
+    <span class="bg-yellow uline big">Понятие табличного представления данных не нуждается в
+      дополнительном пояснении.</span>
+    <span class="bg-gray sans small">В HTML таблицы используются не только традиционно, как метод
+      представления данных, но и как средство форматирования Web-страниц.</span>
+  </p>
+
+  <h2>Создание простейших HTML-таблиц</h2>
+
+  <!-- Способ 1: встроенные стили (атрибут style) -->
+  <p class="sans">
+    <span class="bg-magenta" style="font-size: 26px; font-weight: bold; font-style: italic;">Описание</span>
+    <span class="italic uline" style="font-size: 22px;">таблиц</span>
+    <span class="uline" style="font-size: 20px;">должно</span>
+    располагаться внутри раздела документа &lt;BODY&gt;.
+  </p>
+
+  <p class="sans center" style="font-size: 22px;">
+    Каждая <a href="#math-table">таблица</a> должна
+    <span style="font-size: 28px;">начинаться</span> тэгом &lt;TABLE&gt; и завершаться
+    тэгом &lt;/TABLE&gt;.
+  </p>
+
+  <p class="center">
+    <span class="bg-gray"><span id="word-each">Каждая</span> строка начинается тэгом &lt;TR&gt;
+      (Table Row) и завершается тэгом &lt;/TR&gt;. <span id="word-cell">Отдельная</span> ячейка
+      в строке обрамляется парой тегов &lt;TD&gt; и &lt;/TD&gt; (Table Data) или &lt;TH&gt; и
+      &lt;/TH&gt; (Table Header)</span>
+  </p>
+
+  <p id="table-number">Таблица 1</p>
+
+  <table id="math-table" cellspacing="2">
+    <caption>Математические выражения</caption>
+    <tr>
+      <td class="field1">Поле1</td>
+      <td class="field2">Поле 2</td>
+      <td class="field3">Поле 3</td>
+      <td class="field4">Поле 4</td>
+      <td class="field5">Поле 5</td>
+    </tr>
+    <tr>
+      <td class="formula blue uline">(a+b)<sup>2</sup></td>
+      <td class="formula center">a<sup>2</sup>-b<sup>2</sup></td>
+      <td class="formula blue right">(a-b)<sup>3</sup></td>
+      <td class="formula">A<sub>1</sub>+A<sub>2</sub>+…A<sub>i</sub></td>
+      <td class="formula blue center">y=x<sup>2</sup></td>
+    </tr>
+  </table>
+
+  <p class="center" style="margin-top: 30px;"><a href="index.html">&larr; К списку заданий</a></p>
+
+</body>
+</html>

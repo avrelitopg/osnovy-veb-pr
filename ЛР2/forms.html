@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Пример</title>
+  <style>
+    /* Оформление формы Б под окно браузера из задания */
+    .window {
+      width: 840px;
+      margin: 0 auto 30px;
+      border: 2px solid #3a6ccf;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    .window-title {
+      background: linear-gradient(#5b8fe6, #2f63c8);
+      color: #fff;
+      font: 15px Arial, sans-serif;
+      padding: 4px 10px;
+    }
+    .window-body {
+      padding: 6px 10px 12px;
+      font: 13px Arial, sans-serif;
+    }
+    .window-body h1 {
+      font: normal 30px "Times New Roman", serif;
+      margin: 0;
+    }
+    .window-body input[type="text"],
+    .window-body input[type="password"] {
+      width: 165px;
+      height: 22px;
+    }
+    .window-body textarea {
+      width: 580px;
+      height: 155px;
+    }
+    .window-body .btn {
+      font-weight: bold;
+      color: #1a6fb0;
+      background: #e8e8e8;
+      border: 1px solid #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 align="center">Задание 2.3. Формы</h1>
+
+  <!-- ===== Форма А ===== -->
+  <h2 align="center">А.</h2>
+  <h1 style="font-family: 'Times New Roman', serif;">ЗАО Птицефабрика №1</h1>
+
+  <form action="#" method="post" name="order">
+    <table cellspacing="3" style="font-family: 'Times New Roman', serif;">
+      <tr>
+        <td align="right" width="350"><label for="surname">Фамилия</label></td>
+        <td><input type="text" id="surname" name="surname" size="30"></td>
+      </tr>
+      <tr>
+        <td align="right"><label for="initials">Инициалы</label></td>
+        <td><input type="text" id="initials" name="initials" size="30"></td>
+      </tr>
+      <tr>
+        <td align="right"><label for="pass">Пароль</label></td>
+        <td><input type="password" id="pass" name="pass" size="30"></td>
+      </tr>
+      <tr>
+        <td align="right"><label for="address">Адрес получателя</label></td>
+        <td><input type="text" id="address" name="address" size="57"></td>
+      </tr>
+      <tr>
+        <td align="right"><label for="amount">Количество</label></td>
+        <td><input type="text" id="amount" name="amount" size="12"></td>
+      </tr>
+      <tr>
+        <td align="right">Тип</td>
+        <td>
+          <select name="kind">
+            <option selected>Куриные</option>
+            <option>Перепелиные</option>
+            <option>Утиные</option>
+          </select>
+          <select name="category">
+            <option selected>Отборные</option>
+            <option>Высшая категория</option>
+            <option>Первая категория</option>
+            <option>Вторая категория</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td align="right">Доставка</td>
+        <td>
+          <label><input type="radio" name="delivery" value="post">Почтой</label>
+          <label><input type="radio" name="delivery" value="email">Электронно</label>
+          <label><input type="radio" name="delivery" value="courier">Курьером</label>
+        </td>
+      </tr>
+      <tr>
+        <td align="right"><label for="invoice">Требуется накладная</label></td>
+        <td><input type="checkbox" id="invoice" name="invoice"></td>
+      </tr>
+      <tr>
+        <td align="right"><label for="info">Дополнительная информация</label></td>
+        <td><textarea id="info" name="info" cols="68" rows="3"></textarea></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <input type="submit" value="Отправить">
+          <input type="reset" value="Очистить">
+        </td>
+      </tr>
+    </table>
+  </form>
+
+  <hr>
+
+  <!-- ===== Форма Б ===== -->
+  <h2 align="center">Б.</h2>
+  <div class="window">
+    <div class="window-title">Пример</div>
+    <div class="window-body">
+      <h1>Пример формы регистрации сайта</h1>
+      <form action="#" method="post" enctype="multipart/form-data" name="register">
+        <label for="login">Логин:</label><br>
+        <input type="text" id="login" name="login"><br>
+
+        <label for="password">Пароль:</label><br>
+        <input type="password" id="password" name="password" value="123456"><br>
+
+        <label for="url">URL-адрес сайта:</label><br>
+        <input type="text" id="url" name="url" value="http://"><br>
+
+        <label for="sitename">Название сайта:</label><br>
+        <input type="text" id="sitename" name="sitename"><br>
+
+        <label for="descr">Описание сайта:</label><br>
+        <textarea id="descr" name="descr"></textarea><br>
+
+        <label for="theme">Тема сайта:</label><br>
+        <select id="theme" name="theme">
+          <option selected>Тема не выбрана</option>
+          <option>Образование</option>
+          <option>Развлечения</option>
+          <option>Игры</option>
+          <option>Новости</option>
+          <option>Технологии</option>
+        </select><br>
+
+        <label for="banner">Баннер 88x31:</label><br>
+        <input type="file" id="banner" name="banner" accept="image/*"><br><br>
+
+        <input type="reset" value="Очистить" class="btn">
+        <input type="submit" value="Отправить" class="btn">
+      </form>
+    </div>
+  </div>
+
+  <p align="center"><a href="index.html">&larr; К списку заданий</a></p>
+
+</body>
+</html>
